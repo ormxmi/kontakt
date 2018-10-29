@@ -18,9 +18,6 @@ function countDown(seconds){
         }else{
             timerSeconds.innerHTML = "0"+seconds;
         }
-       
-    console.log(minutes,":",seconds);
-    
     var countingDown = setInterval(function(){
         if(seconds<=0){
             timerSeconds.innerHTML = "0"+seconds;
@@ -28,7 +25,7 @@ function countDown(seconds){
 
             if(minutes==0){
                 //countDownFinished = true;
-                console.log("finished");
+               
                 clearInterval(countingDown);
                 return;
             }
@@ -49,7 +46,7 @@ function countDown(seconds){
         seconds--;
         timerSeconds.innerHTML = seconds;
         }
-        console.log(minutes,":",seconds);
+  
         
     },1010)
 }
