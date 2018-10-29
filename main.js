@@ -1,7 +1,7 @@
 function startGame(){
     document.getElementsByClassName("enter-name-screen")[0].style.display = "none";
     document.getElementsByTagName("body")[0].style.background = "lightblue";
-    countDown(120);
+    //countDown(120);
 }
 var timerMinutes = document.getElementById("timerMinutes");
 var timerSeconds = document.getElementById("timerSeconds");
@@ -36,7 +36,8 @@ function countDown(seconds){
             timerSeconds.innerHTML = seconds;
         }
         }
-        else if(seconds<=9){
+        else if(seconds<=10){
+            
             seconds--;
             timerSeconds.innerHTML = "0"+seconds;
            
