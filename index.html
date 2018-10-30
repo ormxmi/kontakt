@@ -19,10 +19,13 @@
                 <button class="enter-name enter-name-button" onclick="startGame()">ВЛЕЗ</button>
             </div>
         </div>
+
+
     <div class="container">
         <script src="~/bundles/jquery"></script>
         
         <div class="container-word">
+            
             <div id="timer"><p><span id="timerMinutes">1</span>:<span id="timerSeconds">54</span></p></div>
             <p id="wordParagraph">Хирошима</p>
             <p id="questionAsked">Думата обвързана ли е с атомна бомба? </p>
@@ -30,6 +33,7 @@
             <button class="buttonForm buttonFormContact" >КОНТАКТ</button>
             <button class="buttonForm buttonFormGuess">ПОЗНАЙ</button>
             <div class="activePlayers">
+                <div class="active-players-button" onclick="displayActivePlayers()"><div id="leftArrow">></div></div>
                 <div class="activePlayers-inner">
                     <div class="active-player-box">
                         <span class="green-dot"></span>
@@ -68,6 +72,7 @@
                 <button>Откажи се</button>
             </div>
             <div class="usedWords">
+                <div class="active-players-button used-words-button" onclick="displayUsedWord()"><div id="leftArrow">&#60;</div></div>
                 <div>Използвани думи</div>
                 <p>Хитлер, Евреин, Пещ, Хитлер, Евреин, Пещ, Хитлер, Евреин, Пещ, Хитлер, Евреин, Пещ, Хитлер, Евреин, Пещ, Хитлер, Евреин, Пещ, Хитлер, Евреин, Пещ, </p>
             </div>
